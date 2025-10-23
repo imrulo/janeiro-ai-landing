@@ -1,0 +1,81 @@
+{
+  "name": "Janeiro.ai - Premium AI Domain for Sale",
+  "short_name": "Janeiro.ai",
+  "description": "Acquire Janeiro.ai - The definitive digital asset bridging Brazil and AI innovation. Instant brand authority, SEO advantage, and investment potential.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1280&h=720&fit=crop",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Janeiro.ai Domain Landing Page"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact WhatsApp",
+      "short_name": "WhatsApp",
+      "description": "Contact about Janeiro.ai domain via WhatsApp",
+      "url": "https://wa.link/6difl3",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Email Offer",
+      "short_name": "Email",
+      "description": "Make an offer via email",
+      "url": "mailto:imrulo.eth@proton.me?subject=Domain Inquiry - Janeiro.ai",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    }
+  ]
+}
