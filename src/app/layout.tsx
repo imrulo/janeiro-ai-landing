@@ -88,6 +88,11 @@ export default function RootLayout({
         <meta name="supported-color-schemes" content="dark" />
         <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="7LDhIbFJ9BQKiuG1JPJxyQ"
+          async
+        ></script>
       </head>
       <body className={`${inter.className} antialiased`}>
         {children}
