@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
 const inter = Inter({ 
@@ -88,13 +89,14 @@ export default function RootLayout({
         <meta name="supported-color-schemes" content="dark" />
         <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
-        <script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="7LDhIbFJ9BQKiuG1JPJxyQ"
-          async
-        ></script>
       </head>
       <body className={`${inter.className} antialiased`}>
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="7LDhIbFJ9BQKiuG1JPJxyQ"
+          strategy="afterInteractive"
+          async
+        />
         {children}
       </body>
     </html>
