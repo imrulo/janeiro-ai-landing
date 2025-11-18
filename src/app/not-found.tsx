@@ -10,10 +10,10 @@ export default function NotFound() {
         <h1 className="text-9xl font-bold text-slate-700 mb-4" aria-label="404 Error">404</h1>
         <h2 className="text-4xl font-bold mb-6">Page Not Found</h2>
         <p className="text-xl text-slate-200 mb-8">
-          The page you're looking for doesn't exist or has been moved.
+          The page you&rsquo;re looking for doesn&rsquo;t exist or has been moved.
         </p>
         <p className="text-lg text-slate-400 mb-8">
-          But don't worry! The <span className="text-blue-400 font-semibold">Janeiro.ai</span> domain is still available for purchase.
+          But don&rsquo;t worry! The <span className="text-blue-400 font-semibold">Janeiro.ai</span> domain is still available for purchase.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

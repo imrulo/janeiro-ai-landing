@@ -10,7 +10,7 @@ const DOMAIN = 'Janeiro.ai';
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [viewCount, setViewCount] = useState(0);
+  const [viewCount] = useState(() => Math.floor(Math.random() * 50) + 127);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,11 +20,7 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
-    // Simulate view count for urgency
-    const count = Math.floor(Math.random() * 50) + 127;
-    setViewCount(count);
-  }, []);
+  // viewCount intentionally initialized once via lazy state above to avoid cascading renders
 
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
@@ -113,7 +109,7 @@ export default function Home() {
                 </span>
                 <br />
                 <span className="text-3xl sm:text-4xl lg:text-5xl text-slate-200 font-light">
-                  Brazil's Premier AI Brand
+                  Brazil&rsquo;s Premier AI Brand
                 </span>
               </motion.h1>
 
@@ -121,7 +117,7 @@ export default function Home() {
                 variants={fadeInUp}
                 className="text-xl sm:text-2xl text-slate-200 max-w-4xl mx-auto leading-relaxed font-light"
               >
-                Bridge the gap between Brazil's innovation culture and AI's limitless potential. 
+                Bridge the gap between Brazil&rsquo;s innovation culture and AI&rsquo;s limitless potential. 
                 This premium domain delivers instant credibility, market dominance, and unlimited growth opportunities.
               </motion.p>
 
@@ -248,10 +244,10 @@ export default function Home() {
               className="text-center mb-16"
             >
               <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-                Brazil's AI Revolution
+                Brazil&rsquo;s AI Revolution
               </h2>
               <p className="text-xl text-slate-200 max-w-3xl mx-auto font-light">
-                Position your brand at the heart of Latin America's fastest-growing AI ecosystem. 
+                Position your brand at the heart of Latin America&rsquo;s fastest-growing AI ecosystem. 
                 Brazil leads regional AI adoption with 40% year-over-year growth.
               </p>
             </motion.div>
@@ -461,7 +457,7 @@ export default function Home() {
                   <Star className="w-12 h-12 text-purple-400 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Proven Track Record</h3>
                   <p className="text-slate-300">
-                    "Smooth transaction, professional service. The domain transfer was completed exactly as promised." - Previous Client
+                    &ldquo;Smooth transaction, professional service. The domain transfer was completed exactly as promised.&rdquo; - Previous Client
                   </p>
                 </div>
               </motion.div>
@@ -497,7 +493,7 @@ export default function Home() {
               {[
                 {
                   question: "What makes this domain so valuable?",
-                  answer: "Janeiro.ai combines a premium .ai extension with a memorable, brandable name. The .ai TLD is specifically designed for artificial intelligence companies, while 'Janeiro' (Portuguese for January) suggests new beginnings and innovation - perfect for AI companies launching groundbreaking products."
+                  answer: "Janeiro.ai combines a premium .ai extension with a memorable, brandable name. The .ai TLD is specifically designed for artificial intelligence companies, while &lsquo;Janeiro&rsquo; (Portuguese for January) suggests new beginnings and innovation - perfect for AI companies launching groundbreaking products."
                 },
                 {
                   question: "Who is the ideal buyer for this asset?",
@@ -505,18 +501,18 @@ export default function Home() {
                 },
                 {
                   question: "What is the process for making an offer?",
-                  answer: "Simply contact us via WhatsApp or email with your offer. We'll respond within 24 hours to discuss terms. All serious offers are considered, and we're open to negotiation for qualified buyers."
+                  answer: "Simply contact us via WhatsApp or email with your offer. We&rsquo;ll respond within 24 hours to discuss terms. All serious offers are considered, and we&rsquo;re open to negotiation for qualified buyers."
                 },
                 {
                   question: "How does the secure transfer work?",
-                  answer: "We use Escrow.com for all transactions, ensuring both parties are protected. The process typically takes 5-7 business days: payment is held in escrow, domain is transferred to your account, and funds are released to us. You'll have full ownership and control immediately after transfer."
+                  answer: "We use Escrow.com for all transactions, ensuring both parties are protected. The process typically takes 5-7 business days: payment is held in escrow, domain is transferred to your account, and funds are released to us. You&rsquo;ll have full ownership and control immediately after transfer."
                 },
                 {
                   question: "Is this a one-time opportunity?",
                   answer: "Yes, premium domains like Janeiro.ai are unique digital assets. Once sold, this specific domain will no longer be available. The AI industry is rapidly growing, making this an increasingly valuable investment opportunity."
                 },
                 {
-                  question: "What's included with the domain purchase?",
+                  question: "What&rsquo;s included with the domain purchase?",
                   answer: "You receive full ownership of the domain, complete transfer to your preferred registrar, and all associated rights. No additional fees, no hidden costs. The domain is yours to use, develop, or resell as you see fit."
                 }
               ].map((faq, index) => (
