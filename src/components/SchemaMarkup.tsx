@@ -8,19 +8,25 @@ interface SchemaMarkupProps {
 }
 
 export default function SchemaMarkup({ domain, price, description, image }: SchemaMarkupProps) {
+  // Input validation - ensure all inputs are strings and not empty
+  const safeDomain = typeof domain === 'string' ? domain.trim() : 'Janeiro.ai';
+  const safeDescription = typeof description === 'string' ? description.trim() : '';
+  const safePrice = (price && typeof price === 'string') ? price.trim() : 'Contact for pricing';
+  const safeImage = (image && typeof image === 'string') ? image.trim() : "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630&fit=crop";
+  
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": domain,
-    "description": description,
-    "image": image || "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630&fit=crop",
+    "name": safeDomain,
+    "description": safeDescription,
+    "image": safeImage,
     "brand": {
       "@type": "Brand",
       "name": "Janeiro.ai"
     },
     "offers": {
       "@type": "Offer",
-      "price": price || "Contact for pricing",
+      "price": safePrice,
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "seller": {
@@ -28,7 +34,7 @@ export default function SchemaMarkup({ domain, price, description, image }: Sche
         "name": "imrulo.eth",
         "email": "imrulo.eth@proton.me"
       },
-      "description": `Premium domain ${domain} for sale - Perfect for AI companies, tech startups, and innovative businesses.`
+      "description": `Premium domain ${safeDomain} for sale - Perfect for AI companies, tech startups, and innovative businesses.`
     },
     "category": "Domain Name",
     "keywords": ["AI domain", "artificial intelligence", "premium domain", "tech startup", "AI company", "machine learning"],

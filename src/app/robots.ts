@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://janeiro-ai-landing.vercel.app/sitemap.xml',
+    sitemap: 'https://janeiro.ai/sitemap.xml',
   }
 }
