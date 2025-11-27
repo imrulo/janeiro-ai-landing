@@ -1,10 +1,10 @@
-import { Building2, Candle, Factory, Rocket, Workflow } from 'lucide-react';
+import { Building2, CircleDollarSign, Factory, Rocket, Workflow } from 'lucide-react';
 
 const buyers = [
   {
     label: 'AI venture funds & investment vehicles',
     description: 'Signal long-term conviction in AI and frontier technologies from the very first pitch.',
-    icon: Candle,
+    icon: CircleDollarSign,
   },
   {
     label: 'Innovation labs & corporate AI hubs',
