@@ -1,209 +1,87 @@
-# 🚀 Janeiro.ai - Premium Domain Landing Page
+# 🚀 janeiro.ai – Premium Domain Landing Page
 
-> **Brazil's Premier AI Brand** - A world-class, high-conversion landing page designed to sell the premium domain `Janeiro.ai`
+> Luxury sales experience for the rare one-word domain `janeiro.ai`, crafted for AI funds, venture platforms, and enterprise innovation labs.
 
-[![Next.js](https://img.shields.io/badge/Next.js-14+-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3+-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Vercel](https://img.shields.io/badge/Vercel-Ready-black?style=for-the-badge&logo=vercel)](https://vercel.com/)
+## ✨ Overview
 
-## ✨ **Overview**
+This repo contains a focused, single-page Next.js 16 experience that positions **janeiro.ai** as an exclusive asset. The layout, copy, and storytelling are tailored to B2B buyers who need a global-ready AI brand with gravitas, while keeping WhatsApp and email as direct negotiation channels.
 
-This is a sophisticated, conversion-optimized landing page designed to sell the premium domain **Janeiro.ai**. The page positions the domain as Brazil's leading AI brand, combining cultural elements with cutting-edge technology positioning.
+## 🎯 Key Principles
 
-### 🎯 **Key Features**
+- **Premium positioning** – Minimal, confident art direction with gold accents on a dark canvas.
+- **Server-first architecture** – Sections render on the server for fast, SEO-friendly delivery; only critical scripts run on the client.
+- **Realistic messaging** – Copy, metadata, and schema make it clear this is a domain offering, not a SaaS product.
+- **Direct conversion paths** – Primary CTA scrolls to contact, secondary CTA opens a prefilled WhatsApp conversation.
 
-- **🇧🇷 Brazilian AI Positioning**: Unique "Janeiro" (January) = new beginnings narrative
-- **📱 Mobile-First Design**: Fully responsive across all devices
-- **♿ WCAG 2.1 Compliant**: Complete accessibility support
-- **🚀 Performance Optimized**: Lighthouse scores 95+ across all metrics
-- **🔍 SEO Excellence**: JSON-LD schema, meta tags, and structured data
-- **💼 Conversion Focused**: Urgency indicators, trust signals, and dual CTAs
-- **🔒 Security Hardened**: Comprehensive headers and CSP implementation
-- **📱 PWA Ready**: Enhanced manifest with shortcuts and screenshots
+## 🏗️ Tech Stack
 
-## 🏗️ **Tech Stack**
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript 5
+- **UI**: Tailwind CSS 3.4, custom CSS variables
+- **Icons**: lucide-react
+- **Deployment**: Vercel (standalone output + security headers)
 
-- **Framework**: Next.js 14+ with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Deployment**: Vercel (optimized)
-
-## 🚀 **Quick Start**
-
-### Prerequisites
-- Node.js 18+
-- npm or yarn
-
-### Installation
+## ⚙️ Scripts
 
 ```bash
-# Clone the repository
+# Develop locally
+npm run dev
+
+# Lint via the shared ESLint config
+npm run lint
+
+# Production build / pre-deploy verification
+npm run build
+
+# Optional bundle inspection (sets NEXT_ANALYZE=true)
+npm run analyze
+```
+
+## 🚀 Quick Start
+
+```bash
 git clone https://github.com/YOUR_USERNAME/janeiro-ai-landing.git
 cd janeiro-ai-landing
-
-# Install dependencies
 npm install
-
-# Run development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Visit [http://localhost:3000](http://localhost:3000) to preview.
 
-## 📊 **Performance Metrics**
+## 📊 Performance & Monitoring
 
-| Metric | Score | Status |
-|--------|-------|--------|
-| **Lighthouse Performance** | 95+ | ✅ Excellent |
-| **Accessibility** | 98+ | ✅ Excellent |
-| **SEO** | 100 | ✅ Perfect |
-| **Best Practices** | 100 | ✅ Perfect |
-| **Core Web Vitals** | Excellent | ✅ Optimized |
+- Production bundles are optimized via Next.js defaults plus Tailwind tree-shaking.
+- Run `npm run build` before deploying to ensure type, lint, and hydration checks pass.
+- For Lighthouse or WebPageTest reviews, use the deployed Vercel URL and document results in project notes; scores are **not** guaranteed by default.
 
-## 🎨 **Design Highlights**
+## 🎨 Content & Layout
 
-### **Hero Section**
-- Premium gradient background with AI technology imagery
-- "Brazil's Premier AI Brand" positioning
-- Dual CTA strategy (WhatsApp + Email)
-- Urgency indicators and social proof
+- **Hero**: Responsive typography built with Tailwind breakpoints to keep CTAs visible on mobile.
+- **Why / Applications / FAQ**: Each section lives in a dedicated server component for easy updates and testing.
+- **Contact**: Reinforces premium positioning with explicit guidance for inquiries, linking to mailto + WhatsApp (prefilled message).
 
-### **Brazilian AI Ecosystem**
-- Market data: $2.1B AI market, 40% YoY growth
-- Key industries: Fintech, Healthcare, AgTech, E-commerce
-- Comparable domain sales data
-- Cultural integration with innovation narrative
+## ♿ Accessibility & UX
 
-### **Conversion Elements**
-- Sticky WhatsApp CTA with "Secure Now" copy
-- Trust signals: Escrow.com security, testimonials
-- FAQ section with schema markup
-- Professional testimonials and credibility elements
+- Global CSS variables now resolve correctly via `:root`, ensuring predictable theming.
+- Decorative icons include `aria-hidden` and are marked non-focusable to reduce screen-reader noise.
+- Focus states, skip link, and reduced-motion support leverage the existing global styles; extend as you harden WCAG compliance.
 
-## 🔧 **Project Structure**
+## 🔐 Security Notes
 
-```
-janeiro-ai-landing/
-├── src/
-│   ├── app/
-│   │   ├── globals.css          # Global styles and Tailwind config
-│   │   ├── layout.tsx           # Root layout with SEO meta tags
-│   │   ├── page.tsx             # Main landing page
-│   │   ├── not-found.tsx        # Custom 404 page
-│   │   ├── robots.ts            # SEO robots configuration
-│   │   └── sitemap.ts           # SEO sitemap generation
-│   └── components/
-│       └── SchemaMarkup.tsx     # JSON-LD structured data
-├── public/
-│   ├── manifest.json            # PWA manifest
-│   └── favicon files            # Various favicon sizes
-├── CHANGELOG.md                 # Implementation details
-├── DEPLOYMENT_CHECKLIST.md      # Deployment guide
-└── IMPLEMENTATION_SUMMARY.md    # Executive summary
-```
+- Security headers (HSTS, X-Frame-Options, Referrer-Policy, CSP, Permissions-Policy) are defined in `next.config.js` and applied through Vercel.
+- The image optimizer no longer adds a conflicting CSP, allowing approved analytics scripts to run safely.
 
-## 🚀 **Deployment**
+## 📄 Documentation
 
-### Vercel (Recommended)
+- `CHANGELOG.md` – Implementation history
+- `IMPLEMENTATION_SUMMARY.md` – Executive summary
+- `DEPLOYMENT_CHECKLIST.md` – Steps for Vercel launch
 
-```bash
-# Install Vercel CLI
-npm i -g vercel
+## 📞 Contact Channels
 
-# Deploy
-vercel --prod
-```
-
-### Manual Deployment
-
-```bash
-# Build for production
-npm run build
-
-# Start production server
-npm run start
-```
-
-See [DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md) for detailed instructions.
-
-## 📈 **Conversion Strategy**
-
-### **Primary CTA**: WhatsApp Contact
-- **Color**: Green (trust and action)
-- **Copy**: "Secure This Domain"
-- **Placement**: Hero + Sticky bottom
-
-### **Secondary CTA**: Email Offer
-- **Color**: Blue (professional)
-- **Copy**: "Make an Offer"
-- **Target**: Considered buyers
-
-### **Trust Signals**
-- Escrow.com security badge
-- Brazilian AI market data
-- Comparable domain sales
-- Professional testimonials
-
-## 🌟 **Brazilian Cultural Integration**
-
-- **Janeiro** = January (new beginnings)
-- **Brazil** = Innovation and growth
-- **AI** = Future technology
-- **Combined** = Perfect positioning for AI companies
-
-## 📱 **Accessibility Features**
-
-- Screen reader compatibility
-- Keyboard navigation support
-- High contrast mode support
-- Reduced motion preferences
-- Proper ARIA labels and focus states
-
-## 🔒 **Security Features**
-
-- Comprehensive security headers
-- XSS protection
-- Content Security Policy
-- Secure external links
-- HTTPS enforcement
-
-## 📊 **Analytics Ready**
-
-- Google Analytics integration ready
-- Conversion tracking setup
-- Performance monitoring
-- SEO tracking with Search Console
-
-## 🤝 **Contributing**
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 **License**
-
-This project is created for domain sale purposes. All rights reserved.
-
-## 📞 **Contact**
-
-- **Email**: imrulo.eth@proton.me
-- **WhatsApp**: [Contact via WhatsApp](https://wa.link/6difl3)
+- **Email**: `imrulo.eth@proton.me`
+- **WhatsApp**: [Prefilled inquiry](https://wa.link/6difl3?text=Hello%2C%20I%27m%20interested%20in%20acquiring%20the%20domain%20janeiro.ai...) for direct negotiations
 
 ---
 
-## 📋 **Documentation**
-
-- [CHANGELOG.md](./CHANGELOG.md) - Complete implementation details
-- [DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md) - Step-by-step deployment guide
-- [IMPLEMENTATION_SUMMARY.md](./IMPLEMENTATION_SUMMARY.md) - Executive summary
-
----
-
-**Made with ❤️ by [imrulo.eth](https://github.com/imruloeth)**
-
-*This is a domain landing page for sale purposes only. No active services are implied. Domain availability is subject to change.*
+Crafted with intent by [imrulo.eth](https://github.com/imruloeth).

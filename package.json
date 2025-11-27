@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "eslint . --max-warnings=0",
+    "analyze": "NEXT_ANALYZE=true next build",
     "export": "next build && next export",
     "deploy": "vercel --prod"
   },

@@ -10,9 +10,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Janeiro.ai - Premium AI Domain for Sale | Brazil\'s Leading AI Brand',
-  description: 'Acquire Janeiro.ai - The definitive digital asset bridging Brazil and AI innovation. Instant brand authority, SEO advantage, and investment potential for forward-thinking companies.',
-  keywords: 'AI domain, artificial intelligence, premium domain, tech startup, AI company, machine learning, domain for sale, Brazil AI, Janeiro domain, AI branding',
+  title: 'Janeiro.ai – Premium AI Domain for Visionary Businesses',
+  description:
+    'Acquire janeiro.ai, a rare one-word .ai domain that captures intelligent beginnings for ambitious AI, venture, and innovation firms. Serious inquiries only.',
+  keywords: [
+    'AI domain',
+    'premium domain',
+    'brandable .ai',
+    'tech brand name',
+    'AI company domain',
+    'startup domain',
+  ],
   authors: [{ name: 'imrulo.eth' }],
   creator: 'imrulo.eth',
   publisher: 'imrulo.eth',
@@ -26,16 +34,17 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Janeiro.ai - Premium AI Domain for Sale | Brazil\'s Leading AI Brand',
-    description: 'Acquire Janeiro.ai - The definitive digital asset bridging Brazil and AI innovation. Instant brand authority, SEO advantage, and investment potential.',
+    title: 'Janeiro.ai – Premium AI Domain for Visionary Businesses',
+    description:
+      'Acquire janeiro.ai, a rare .ai domain for AI funds, innovation labs, and enterprise platforms seeking intelligent beginnings.',
     url: 'https://janeiro.ai',
     siteName: 'Janeiro.ai Domain Sale',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630&fit=crop',
+        url: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&h=630&q=70',
         width: 1200,
         height: 630,
-        alt: 'Janeiro.ai - Premium AI Domain bridging Brazil and Artificial Intelligence',
+        alt: 'janeiro.ai premium AI domain',
       },
     ],
     locale: 'en_US',
@@ -43,9 +52,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Janeiro.ai - Premium AI Domain for Sale | Brazil\'s Leading AI Brand',
-    description: 'Acquire Janeiro.ai - The definitive digital asset bridging Brazil and AI innovation. Instant brand authority, SEO advantage, and investment potential.',
-    images: ['https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=630&fit=crop'],
+    title: 'Janeiro.ai – Premium AI Domain for Visionary Businesses',
+    description:
+      'Acquire janeiro.ai, a rare one-word .ai domain for ambitious AI, venture, and innovation firms.',
+    images: ['https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&h=630&q=70'],
     creator: '@imruloeth',
   },
   robots: {
